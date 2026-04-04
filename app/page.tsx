@@ -27,7 +27,6 @@ export default function Home() {
   // Wrapped in a Fragment (<> </>) to return a single parent element
   return (
     <>
-      <p>fe</p>
       {mobileDisplay && <MobileView />}
     </>
   );

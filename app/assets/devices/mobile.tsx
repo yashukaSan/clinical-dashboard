@@ -1,6 +1,6 @@
 "use client";
 
-import {  ResponsiveContainer, Line, CartesianGrid, ComposedChart, Bar, XAxis, YAxis, Tooltip, Legend} from "recharts";
+import {  ResponsiveContainer, Line, CartesianGrid, ComposedChart, Bar, XAxis, YAxis, LabelList, Tooltip, Legend} from "recharts";
 import { useState, useEffect } from "react";
 
 
@@ -47,21 +47,32 @@ export default function MobileView() {
   }, []);
 
   if (!isMount) return null;
+  const maxBBT = Math.max(...patientData.map((d) => d.bbt));
+  console.log(maxBBT);
 
   return (
     <>
-      <header>CLINICAL MENSTRUAL CYCLE DASHBOARD</header>
+      <header className="flex justify-center text-[1.25rem] bg-[#efefef] text-[#202020] font-arial font-bold">
+        CLINICAL MENSTRUAL CYCLE DASHBOARD
+      </header>
+      <hr className="text-red-400 border rounded mx-1  " />
       <section className="text-white">
-        <div>
-          <p>Patient Name</p>
-          <p>Date</p>
-          <p>Cycle Duration: days</p>
+        <div className="flex justify-around bg-[#f3f3f3] text-[#101010]">
+          <p className="font-bold">Patient Name</p>
+          <p>Age (in Years)</p>
+          <p>Cycle Duration: x days</p>
         </div>
-        <p>Cycle Start Date: date</p>
+
+        <p className="text-center text-[1.1rem] bg-[#f3f3f3] text-[#101010] ">
+          Last Cycle Start : date
+        </p>
       </section>
-      <section>Cycle Day: 14 (ovulation Window)</section>
-      <section className="w-full h-[800px]">
-        <ResponsiveContainer width="100%" height="100%">
+      <hr className="text-red-400 border rounded mx-1  " />
+      <section className=" bg-[#f0f0f0] text-black text-center">
+        Cycle Day: 14 (ovulation Window)
+      </section>
+      <section className="bg-[#efefdf]  w-full h-[800px]">
+        <ResponsiveContainer width="100%" height="50%">
           <ComposedChart width="100%" height="100%" data={patientData}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" />
@@ -82,9 +93,21 @@ export default function MobileView() {
             />
             <Tooltip />
             <Legend />
-            <Bar dataKey="energy" barSize={20} fill="#49c999" />
+            <Bar dataKey="energy" barSize={20} fill="#49c999">
+              <LabelList
+                dataKey="energy"
+                position="top"
+                style={{ fill: "#49c999", fontSize: "12px" }}
+              />
+            </Bar>
 
-            <Line type="monotone" dataKey="pain" stroke="#f55565" />
+            <Line type="monotone" dataKey="pain" stroke="#f55565">
+              <LabelList
+                dataKey="pain"
+                position="top"
+                style={{ fill: "#f55565", fontSize: "12px" }}
+              />
+            </Line>
             <Line
               yAxisId="right"
               type="monotone" // This creates the "Spline" (curved) effect
@@ -92,11 +115,33 @@ export default function MobileView() {
               stroke="#3b82f6"
               strokeWidth={3}
               dot={{ r: 4 }}
-              name="Body Temp (Spline)"
+              name="Body Temp"
+            />
+            <LabelList
+              dataKey="bbt"
+              position="top"
+              content={(props: any) => {
+                const { x, y, value } = props;
+                // Only render if this value is the maximum
+                if (value === maxBBT) {
+                  return (
+                    <text
+                      x={x}
+                      y={y - 10}
+                      fill="#ef4444" // Red color for the peak
+                      fontSize={12}
+                      fontWeight="bold"
+                      textAnchor="middle"
+                    >
+                      PEAK ({value})
+                    </text>
+                  );
+                }
+                return null;
+              }}
             />
           </ComposedChart>
         </ResponsiveContainer>
-
       </section>
     </>
   );
