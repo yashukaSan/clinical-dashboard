@@ -9,10 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@syncfusion/ej2-react-charts": "^33.1.44",
     "next": "16.1.7",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-native": "^0.84.1"
+    "react-native": "^0.84.1",
+    "recharts": "^3.8.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

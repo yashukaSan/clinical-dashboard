@@ -1,23 +1,34 @@
 "use client";
 
-import {useState, useEffect} from 'react';
+import MobileView from "./assets/devices/mobile";
+import { useState, useEffect } from "react";
 
 export default function Home() {
-    const [width, setWidth] = useState<number>(window.innerWidth);
+  const [width, setWidth] = useState<number>(0);
+  const [mobileDisplay, setMobileDisplay] = useState(false);
 
-    useEffect(() => {
-      const handleResize = () => setWidth(window.innerWidth);
-      window.addEventListener("resize", handleResize);
+  useEffect(() => {
+    const handleResize = () => {
+      const currentWidth = window.innerWidth;
+      setWidth(currentWidth);
+      // Updated logic: checking the value directly here ensures it's accurate
+      setMobileDisplay(currentWidth > 600);
+    };
 
-      // Clean up listener on unmount
-      console.log(width);
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    // Set initial state on mount
+    handleResize();
 
+    window.addEventListener("resize", handleResize);
 
+    // Clean up listener on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Wrapped in a Fragment (<> </>) to return a single parent element
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      
-    </div>
+    <>
+      <p>fe</p>
+      {mobileDisplay && <MobileView />}
+    </>
   );
 }

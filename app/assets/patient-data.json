@@ -1,236 +1,228 @@
 {
     "": [
-        [
-            "Day",
-            "BBT_C",
-            "Pain",
-            "Bleeding",
-            "LH_Test",
-            "Energy"
-        ],
-        [
-            "1",
-            "36.4",
-            "9",
-            "Heavy",
-            "Did not test",
-            "2"
-        ],
-        [
-            "2",
-            "36.4",
-            "9",
-            "Heavy",
-            "Did not test",
-            "2"
-        ],
-        [
-            "3",
-            "36.3",
-            "8",
-            "Medium",
-            "Did not test",
-            "3"
-        ],
-        [
-            "4",
-            "36.3",
-            "7",
-            "Medium",
-            "Did not test",
-            "3"
-        ],
-        [
-            "5",
-            "36.4",
-            "7",
-            "Light",
-            "Did not test",
-            "4"
-        ],
-        [
-            "6",
-            "36.3",
-            "6",
-            "None",
-            "Did not test",
-            "5"
-        ],
-        [
-            "7",
-            "36.3",
-            "6",
-            "None",
-            "Did not test",
-            "6"
-        ],
-        [
-            "8",
-            "36.2",
-            "5",
-            "None",
-            "Did not test",
-            "6"
-        ],
-        [
-            "9",
-            "36.3",
-            "5",
-            "None",
-            "Low",
-            "7"
-        ],
-        [
-            "10",
-            "36.3",
-            "5",
-            "None",
-            "Low",
-            "7"
-        ],
-        [
-            "11",
-            "36.4",
-            "6",
-            "None",
-            "High",
-            "8"
-        ],
-        [
-            "12",
-            "36.4",
-            "6",
-            "None",
-            "High",
-            "8"
-        ],
-        [
-            "13",
-            "36.2",
-            "7",
-            "None",
-            "Peak",
-            "7"
-        ],
-        [
-            "14",
-            "36.3",
-            "7",
-            "None",
-            "Peak",
-            "7"
-        ],
-        [
-            "15",
-            "36.5",
-            "6",
-            "None",
-            "High",
-            "7"
-        ],
-        [
-            "16",
-            "36.7",
-            "5",
-            "None",
-            "Low",
-            "6"
-        ],
-        [
-            "17",
-            "36.8",
-            "5",
-            "None",
-            "Did not test",
-            "6"
-        ],
-        [
-            "18",
-            "36.8",
-            "5",
-            "None",
-            "Did not test",
-            "6"
-        ],
-        [
-            "19",
-            "36.9",
-            "6",
-            "None",
-            "Did not test",
-            "5"
-        ],
-        [
-            "20",
-            "36.9",
-            "6",
-            "None",
-            "Did not test",
-            "5"
-        ],
-        [
-            "21",
-            "37.0",
-            "6",
-            "None",
-            "Did not test",
-            "5"
-        ],
-        [
-            "22",
-            "36.9",
-            "7",
-            "None",
-            "Did not test",
-            "4"
-        ],
-        [
-            "23",
-            "36.9",
-            "7",
-            "None",
-            "Did not test",
-            "4"
-        ],
-        [
-            "24",
-            "36.8",
-            "7",
-            "None",
-            "Did not test",
-            "3"
-        ],
-        [
-            "25",
-            "36.8",
-            "8",
-            "None",
-            "Did not test",
-            "3"
-        ],
-        [
-            "26",
-            "36.7",
-            "8",
-            "None",
-            "Did not test",
-            "3"
-        ],
-        [
-            "27",
-            "36.6",
-            "8",
-            "None",
-            "Did not test",
-            "2"
-        ],
-        [
-            "28",
-            "36.5",
-            "9",
-            "None",
-            "Did not test",
-            "2"
-        ]
+        {
+            "Day": "1",
+            "BBT_C": "36.4",
+            "Pain": "9",
+            "Bleeding": "Heavy",
+            "LH_Test": "Did not test",
+            "Energy": "2"
+        },
+        {
+            "Day": "2",
+            "BBT_C": "36.4",
+            "Pain": "9",
+            "Bleeding": "Heavy",
+            "LH_Test": "Did not test",
+            "Energy": "2"
+        },
+        {
+            "Day": "3",
+            "BBT_C": "36.3",
+            "Pain": "8",
+            "Bleeding": "Medium",
+            "LH_Test": "Did not test",
+            "Energy": "3"
+        },
+        {
+            "Day": "4",
+            "BBT_C": "36.3",
+            "Pain": "7",
+            "Bleeding": "Medium",
+            "LH_Test": "Did not test",
+            "Energy": "3"
+        },
+        {
+            "Day": "5",
+            "BBT_C": "36.4",
+            "Pain": "7",
+            "Bleeding": "Light",
+            "LH_Test": "Did not test",
+            "Energy": "4"
+        },
+        {
+            "Day": "6",
+            "BBT_C": "36.3",
+            "Pain": "6",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "5"
+        },
+        {
+            "Day": "7",
+            "BBT_C": "36.3",
+            "Pain": "6",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "6"
+        },
+        {
+            "Day": "8",
+            "BBT_C": "36.2",
+            "Pain": "5",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "6"
+        },
+        {
+            "Day": "9",
+            "BBT_C": "36.3",
+            "Pain": "5",
+            "Bleeding": "None",
+            "LH_Test": "Low",
+            "Energy": "7"
+        },
+        {
+            "Day": "10",
+            "BBT_C": "36.3",
+            "Pain": "5",
+            "Bleeding": "None",
+            "LH_Test": "Low",
+            "Energy": "7"
+        },
+        {
+            "Day": "11",
+            "BBT_C": "36.4",
+            "Pain": "6",
+            "Bleeding": "None",
+            "LH_Test": "High",
+            "Energy": "8"
+        },
+        {
+            "Day": "12",
+            "BBT_C": "36.4",
+            "Pain": "6",
+            "Bleeding": "None",
+            "LH_Test": "High",
+            "Energy": "8"
+        },
+        {
+            "Day": "13",
+            "BBT_C": "36.2",
+            "Pain": "7",
+            "Bleeding": "None",
+            "LH_Test": "Peak",
+            "Energy": "7"
+        },
+        {
+            "Day": "14",
+            "BBT_C": "36.3",
+            "Pain": "7",
+            "Bleeding": "None",
+            "LH_Test": "Peak",
+            "Energy": "7"
+        },
+        {
+            "Day": "15",
+            "BBT_C": "36.5",
+            "Pain": "6",
+            "Bleeding": "None",
+            "LH_Test": "High",
+            "Energy": "7"
+        },
+        {
+            "Day": "16",
+            "BBT_C": "36.7",
+            "Pain": "5",
+            "Bleeding": "None",
+            "LH_Test": "Low",
+            "Energy": "6"
+        },
+        {
+            "Day": "17",
+            "BBT_C": "36.8",
+            "Pain": "5",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "6"
+        },
+        {
+            "Day": "18",
+            "BBT_C": "36.8",
+            "Pain": "5",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "6"
+        },
+        {
+            "Day": "19",
+            "BBT_C": "36.9",
+            "Pain": "6",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "5"
+        },
+        {
+            "Day": "20",
+            "BBT_C": "36.9",
+            "Pain": "6",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "5"
+        },
+        {
+            "Day": "21",
+            "BBT_C": "37.0",
+            "Pain": "6",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "5"
+        },
+        {
+            "Day": "22",
+            "BBT_C": "36.9",
+            "Pain": "7",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "4"
+        },
+        {
+            "Day": "23",
+            "BBT_C": "36.9",
+            "Pain": "7",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "4"
+        },
+        {
+            "Day": "24",
+            "BBT_C": "36.8",
+            "Pain": "7",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "3"
+        },
+        {
+            "Day": "25",
+            "BBT_C": "36.8",
+            "Pain": "8",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "3"
+        },
+        {
+            "Day": "26",
+            "BBT_C": "36.7",
+            "Pain": "8",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "3"
+        },
+        {
+            "Day": "27",
+            "BBT_C": "36.6",
+            "Pain": "8",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "2"
+        },
+        {
+            "Day": "28",
+            "BBT_C": "36.5",
+            "Pain": "9",
+            "Bleeding": "None",
+            "LH_Test": "Did not test",
+            "Energy": "2"
+        }
     ]
 }
