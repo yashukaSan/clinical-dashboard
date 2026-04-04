@@ -12,7 +12,7 @@ export default function Home() {
       const currentWidth = window.innerWidth;
       setWidth(currentWidth);
       // Updated logic: checking the value directly here ensures it's accurate
-      setMobileDisplay(currentWidth > 600);
+      setMobileDisplay(currentWidth < 600);
     };
 
     // Set initial state on mount
